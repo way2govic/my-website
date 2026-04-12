@@ -25,6 +25,11 @@ a {
     text-decoration: none;
 }
 
+strong, b {
+    font-size: 1.06em;
+    font-weight: 600;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -35,11 +40,11 @@ img {
 /* Typography */
 .huge-title {
     font-family: var(--font-serif);
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-weight: 400;
     line-height: 0.9;
     letter-spacing: -3px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-title {
@@ -68,8 +73,8 @@ img {
 }
 
 .lead {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
@@ -115,17 +120,19 @@ img {
 .split-section {
     display: flex;
     border-bottom: 1px solid var(--border-color);
+    min-height: calc(100vh - 73px);
+    scroll-margin-top: 73px;
 }
 
 .left-pane {
     flex: 0 0 38%;
-    padding: 3rem;
+    padding: 2.5rem;
     border-right: 1px solid var(--border-color);
 }
 
 .right-pane {
     flex: 1;
-    padding: 3rem;
+    padding: 2.5rem;
 }
 
 .first-section {
@@ -138,8 +145,8 @@ img {
 }
 
 .focus-areas {
-    margin-top: 4rem;
-    padding-top: 3rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--border-color);
 }
 
@@ -148,16 +155,16 @@ img {
 }
 
 .focus-areas li {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
     font-weight: 400;
 }
 
 .bullet-list li {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .bullet-list li span {
@@ -220,6 +227,21 @@ img {
 .contact-box a {
     font-size: 0.9rem;
     color: #666;
+}
+
+.logo-link {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain !important;
+    filter: none !important;
+    margin-top: 5px;
 }
 
 /* Images */
